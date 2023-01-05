@@ -7,6 +7,11 @@ ol,
 ul {
   padding-left: 30px;
 }
+.mainContainer {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 
 .board-row:after {
   clear: both;
@@ -44,8 +49,35 @@ ul {
 .game {
   display: flex;
   flex-direction: row;
+  height: 200px;
 }
 
 .game-info {
   margin-left: 20px;
+}
+.game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.game-info ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px 29px;
+  height: 100%;
+}
+.game-info ol li {
+  margin: 5px;
+}
+.game-info ol li button {
+  width: 120px;
 }
